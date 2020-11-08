@@ -1,0 +1,13 @@
+{
+    "name": "statsv-cer",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "datatables.net": "1.10.22",
+        "datatables.net-dt": "1.10.22",
+        "express": "^4.17.1"
+    }
+}
