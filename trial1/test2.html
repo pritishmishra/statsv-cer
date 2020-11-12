@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>Test table</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/dataTables.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.uikit.min.css" />
+    </head>
+    <body>
+        <section>
+            <table id="table_id" class="uk-table uk-table-hover uk-table-striped">
+                <thead>
+                    <tr>
+                        <th>Columns</th>
+                        <th>Description</th>
+                        <th>Unique Values #</th>
+                        <th>Missing Values #</th>
+                        <th>Most Common Values</th>
+                        <th>First 10 Values</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            var json = [
+                {
+                    "columns": "p_ID"
+                },
+                {
+                    "columns": "project-name"
+                },
+                {
+                    "columns": "username"
+                },
+                {
+                    "columns": "total-views"
+                },
+                {
+                    "columns": "total-remixes"
+                },
+                {
+                    "columns": "total-favorites"
+                },
+                {
+                    "columns": "total-loves"
+                },
+                {
+                    "columns": "is-remix"
+                },
+                {
+                    "columns": "Remixed-from"
+                },
+                {
+                    "columns": "Abstraction"
+                },
+                {
+                    "columns": "Parallelism"
+                },
+                {
+                    "columns": "Logic"
+                },
+                {
+                    "columns": "Synchronization"
+                },
+                {
+                    "columns": "FlowControl"
+                },
+                {
+                    "columns": "UserInteractivity"
+                },
+                {
+                    "columns": "DataRepresentation"
+                },
+                {
+                    "columns": "Mastery"
+                },
+                {
+                    "columns": "Clones"
+                },
+                {
+                    "columns": "CustomBlocks"
+                },
+                {
+                    "columns": "InstancesSprites"
+                },
+                {
+                    "columns": "URL"
+                }
+            ];
+            var table = $('#table_id').DataTable({
+                data: json,
+                columns: [
+                    {
+                        data: "columns"
+                    },
+                    {
+                        data: "description",
+                        defaultContent: ""
+                    },
+                    {
+                        data: "unique_values",
+                        defaultContent: ""
+                    },
+                    {
+                        data: "missing_values",
+                        defaultContent: ""
+                    },
+                    {
+                        data: "most_common_values",
+                        defaultContent: ""
+                    },
+                    {
+                        data: "first_10_values",
+                        defaultContent: ""
+                    }
+                ],
+                paging: false,
+                select: true,
+                info: false,
+                searching: false
+            });
+        });
+    </script>
+    </body>
+
+    
+
+</html>

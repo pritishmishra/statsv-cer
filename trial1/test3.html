@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>Test table</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/iframe-styles.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/dataTables.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/dataTables.uikit.min.css" />
+    </head>
+    <body>
+        <section>
+            <h4 id="info"> File Size: <span id="numbers"> 31.2 MB </span> | No. of rows: <span id="numbers"> 250163 </span> | No. of columns: <span id="numbers"> 21 </span> </h4>
+            <h4 id="info"> Showing <span id="numbers"> 10 </span> rows of the dataset: </h4>
+            <table id="table_id" class="uk-table uk-table-hover uk-table-striped">
+                <thead>
+                    <tr>
+                        <th>p_ID</th>
+                        <th>project-name</th>
+                        <th>username</th>
+                        <th>total-views</th>
+                        <th>total-remixes</th>
+                        <th>total-favorites</th>
+                        <th>total-loves</th>
+                        <th>is-remix</th>
+                        <th>Remixed-from</th>
+                        <th>Abstraction</th>
+                        <th>Parallelism</th>
+                        <th>Logic</th>
+                        <th>Synchronization</th>
+                        <th>FlowControl</th>
+                        <th>UserInteractivity</th>
+                        <th>DataRepresentation</th>
+                        <th>Mastery</th>
+                        <th>Clones</th>
+                        <th>CustomBlocks</th>
+                        <th>InstancesSprites</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            var json = [
+    {
+        "p_ID": "10519701",
+        "project-name": "adfs move seens (powne) WARNING 2 YEARS OLD AND BAD",
+        "username": "titowulk",
+        "total-views": "4",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/10519701"
+    },
+    {
+        "p_ID": "10541430",
+        "project-name": "Full 16 Frame Scratch Cat Walk Cycle ",
+        "username": "titowulk",
+        "total-views": "2",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/10541430"
+    },
+    {
+        "p_ID": "10942522",
+        "project-name": "The Audience is now Deaf remix",
+        "username": "LimeGreenFlix",
+        "total-views": "3",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/10942522"
+    },
+    {
+        "p_ID": "11823040",
+        "project-name": "patriotoic illusion!",
+        "username": "Mjayden",
+        "total-views": "25",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/11823040"
+    },
+    {
+        "p_ID": "11828235",
+        "project-name": "Untitled copy",
+        "username": "Luka06",
+        "total-views": "1",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/11828235"
+    },
+    {
+        "p_ID": "12030146",
+        "project-name": "The Ferrari",
+        "username": "jokor",
+        "total-views": "15",
+        "total-remixes": "0",
+        "total-favorites": "2",
+        "total-loves": "2",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/12030146"
+    },
+    {
+        "p_ID": "12093755",
+        "project-name": "Untitled",
+        "username": "able_arellano",
+        "total-views": "1",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/12093755"
+    },
+    {
+        "p_ID": "12237615",
+        "project-name": "Old project that I reprogrammed",
+        "username": "Robotboy01",
+        "total-views": "4",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/12237615"
+    },
+    {
+        "p_ID": "12256407",
+        "project-name": "Rhombe",
+        "username": "PHEINRICH",
+        "total-views": "2",
+        "total-remixes": "0",
+        "total-favorites": "0",
+        "total-loves": "0",
+        "is-remix": "0",
+        "Remixed-from": "NULL",
+        "Abstraction": "NULL",
+        "Parallelism": "NULL",
+        "Logic": "NULL",
+        "Synchronization": "NULL",
+        "FlowControl": "NULL",
+        "UserInteractivity": "NULL",
+        "DataRepresentation": "NULL",
+        "Mastery": "NULL",
+        "Clones": "NULL",
+        "CustomBlocks": "NULL",
+        "InstancesSprites": "NULL",
+        "URL": "https://scratch.mit.edu/projects/12256407"
+    }
+];
+            var table = $('#table_id').DataTable({
+                data: json,
+                columns: [
+                    {
+                        data: "p_ID"
+                    },
+                    {
+                        data: "project-name"
+                    },
+                    {
+                        data: "username"
+                    },
+                    {
+                        data: "total-views"
+                    },
+                    {
+                        data: "total-remixes"
+                    },
+                    {
+                        data: "total-favorites"
+                    },
+                    {
+                        data: "total-loves"
+                    },
+                    {
+                        data: "is-remix"
+                    },
+                    {
+                        data: "Remixed-from"
+                    },
+                    {
+                        data: "Abstraction"
+                    },
+                    {
+                        data: "Parallelism"
+                    },
+                    {
+                        data: "Logic"
+                    },
+                    {
+                        data: "Synchronization"
+                    },
+                    {
+                        data: "FlowControl"
+                    },
+                    {
+                        data: "UserInteractivity"
+                    },
+                    {
+                        data: "DataRepresentation"
+                    },
+                    {
+                        data: "Mastery"
+                    },
+                    {
+                        data: "Clones"
+                    },
+                    {
+                        data: "CustomBlocks"
+                    },
+                    {
+                        data: "InstancesSprites"
+                    },
+                    {
+                        data: "URL"
+                    }
+                ],
+                paging: false,
+                select: true,
+                info: false,
+                searching: false
+            });
+        });
+    </script>
+    </body>
+
+    
+
+</html>
